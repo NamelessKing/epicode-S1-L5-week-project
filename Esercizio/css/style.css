@@ -1,1 +1,99 @@
-/* Your styles here */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+  --color-primary: #25a2c3;
+  --color-body: #393d41;
+  --color-footer: #25a2c3;
+  --color-footer-link: #c8e7f0;
+  --color-btn: #f04c2f;
+  --color-testimonial: #e22d0e;
+  --color-card-border: #dee1e3;
+  --white: #fff;
+  --black: #000;
+
+  --font-heading: 'Montserrat', Arial, sans-serif;
+  --font-body: 'Open Sans', Arial, sans-serif;
+}
+
+/* Base */
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-body);
+  font-size: 1.2rem;
+  line-height: 1.65;
+  background: var(--white);
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+p { margin: 0 0 1rem; }
+
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Components */
+.btn {
+  display: inline-block;
+  background: var(--color-btn);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  border: 0;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+}
+.card-body { padding: 1rem; }
+.card-title { margin: 0 0 0.5rem; }
+.card-text { margin: 0; }
+
+/* Testimonial */
+.testimonial { background: var(--color-testimonial); color: var(--white); border-radius: 0; }
+.testimonial-body { padding: 1rem; }
+
+/* Header & Footer */
+.site-header { background: var(--black); color: var(--white); }
+.site-header a { color: var(--white); }
+.site-logo { display: inline-block; line-height: 0; }
+
+.site-footer { background: var(--color-footer); color: var(--white); }
+.site-footer a { color: var(--color-footer-link); }
+.footer-heading { color: var(--white); font-family: var(--font-heading); font-weight: 700; }
+
+.img-rounded { border-radius: 50%; overflow: hidden; }
+
